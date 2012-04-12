@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "thread number?"
+read tnumber
+mkdir $tnumber
+cd $tnumber
+while :
+do
+wget -e robots=off -E -nd -nc -np -r -k -H -Dimages.4chan.org,thumbs.4chan.org $1
+cp $tnumber.html index.html
+sleep 10
+done
