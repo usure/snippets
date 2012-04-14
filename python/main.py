@@ -1,19 +1,20 @@
 #!/usr/bin/python
 # Created by: TSF
-#WTFPL
+#pip install google (REQUIREMENT)
 from sys import argv
+from google import search
 import sys
-selfname = sys.argv[0]
+
+selfname = sys.argv[0] # The name of the script itself.
+
 try:
    script, query = argv
 except ValueError:
     print 'Syntax: %r "query"' % selfname
     quit()
-#You will need this module: http://googolplex.sourceforge.net/
-from google import search
-for url in search('(%r)' % query, stop=20):
-                print(url)
-
-
-
-
+try:
+    for url in search('(%r)' % query, stop=20):
+   	       	print(url)
+except KeyboardInterrupt:
+ 	quit()
+ 
