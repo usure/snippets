@@ -1,0 +1,10 @@
+(defun copy-stream (in out)
+   (loop for line = (read-line in nil nil)
+         while line
+         do (write-line line out)))
+
+(defun system (cmd)
+  (with-open-stream (s1 (ext:run-shell-command cmd :output :stream))
+    (with-output-to-string (out)
+      (copy-stream s1 out))))
+
