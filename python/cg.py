@@ -3,9 +3,10 @@
 #pip install google (REQUIREMENT)
 from sys import argv
 from google import search
+import os
 import sys
 
-selfname = sys.argv[0] # The name of the script itself.
+selfname = os.path.basename(__file__) # The name of the script itself.
 
 try:
    script, query = argv

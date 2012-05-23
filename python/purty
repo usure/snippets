@@ -1,23 +1,24 @@
 #!/usr/bin/python2.7
 #make html files purty.
 from BeautifulSoup import BeautifulSoup
-import re
 from sys import argv
 import sys
+import re
 import os
 
-selfname = sys.argv[0] # The name of the script itself.
+selfname = os.path.basename(__file__) # The name of the script itself.
 
 try:
    script, filez = argv
 except ValueError:
-    print 'Syntax: %r "file"' % selfname
+    print "syntax: %r file" % selfname
     quit()
 try:
    file = open(filez)
 except IOError:
    print "File doesn't exist. :/"
-   quit()	
+   quit()
+	
 lines = file.readlines()
 soup = BeautifulSoup(''.join(lines))
 print soup.prettify()
