@@ -1,0 +1,12 @@
+#!/usr/bin/python2.7
+from BeautifulSoup import BeautifulSoup
+import re
+from sys import argv
+import os
+
+script, filez = argv
+file = open(filez)
+lines = file.readlines()
+soup = BeautifulSoup(''.join(lines))
+print soup.prettify()
+
