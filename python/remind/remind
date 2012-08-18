@@ -1,0 +1,18 @@
+#!/usr/bin/python2
+from blessings import Terminal
+from sys import argv
+import os
+#import time
+
+try:
+  script, remindx, timex = argv
+except ValueError:
+  print "./remindme \"USE QUOTES\" 4 (secs)"
+  quit()
+count = 0
+t = Terminal()
+#timex = int(timex)
+os.system("sleep %r" % timex)
+#time.sleep(timex)
+
+print t.clear_eol + t.move(0, 60) + t.standout + t.red + ('REMINDER:') + t.normal + t.blue +  " " + t.blink(remindx)

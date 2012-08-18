@@ -1,0 +1,5 @@
+Dependencies:
+blessings
+
+Run:
+./remind "Walk dog." 8 (seconds) & # the "&" is important<<<
