@@ -1,0 +1,191 @@
+/*flat.css */
+body {
+  background-color: #2c3e50; }
+
+.row {
+  margin: 5px 0;
+  padding: 5px; }
+
+.flat-container {
+  position: absolute;
+  left: 500px;
+  top: 30px;
+  max-width: 260px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 40px;
+  padding: 0 1.5rem;
+  background-color: #34495e;
+  overflow: hidden;
+  margin: 5px auto;
+  width: 80%; }
+
+/*Round buttons */
+.small-round-button {
+  display: inline-block;
+  text-align: center;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  margin: 0 7px;
+  padding: 5px 8px;
+  font-size: 12px;
+  background: #4479ba;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+
+.small-round-button:hover, .small-round-button:focus {
+  background: #e74c3c;
+  text-decoration: none; }
+
+.medium-round-button {
+  display: inline-block;
+  text-align: center;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  margin: 0 0px;
+  padding: 5px 8px;
+  font-size: 14px;
+  background: #4479ba;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+
+.medium-round-button:hover, .medium-round-button:focus {
+  background: #e74c3c;
+  text-decoration: none; }
+
+.big-round-button {
+  text-align: center;
+  padding: 5px 8px;
+  font-size: 19px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  background: #4479ba;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+
+.big-round-button:hover, .big-round-button:focus {
+  background: #e74c3c;
+  text-decoration: none;
+  /*Regular buttons */ }
+
+.small-button {
+  display: inline-block;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  margin: 0 7px;
+  padding: 5px 8px;
+  font-size: 12px;
+  background: #4479ba;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+
+.small-button:hover, .small-button:focus {
+  background: #e74c3c;
+  text-decoration: none; }
+
+.medium-button {
+  display: inline-block;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  margin: 0 0px;
+  padding: 5px 8px;
+  font-size: 14px;
+  background: #4479ba;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+
+.medium-button:hover, .medium-button:focus {
+  background: #e74c3c;
+  text-decoration: none; }
+
+.big-button {
+  text-align: center;
+  padding: 5px 8px;
+  font-size: 19px;
+  display: inline-block;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  background: #4479ba;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
+
+.big-button:hover, .big-button:focus {
+  background: #e74c3c;
+  text-decoration: none; }
+
+.flat-textbox {
+  border: 0px solid #dbdbdb;
+  font-family: "Lato", sans-serif;
+  padding: 0.4vw;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #bdc3c7; }
+
+.flat-textbox:hover, .flat-textbox:focus {
+  color: black;
+  background-color: #27ae60; }
+
+h1, h2, h3, h4 {
+  font-size: 8dw;
+  color: #f1c40f;
+  font-family: "Lato", sans-serif;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+h1:hover {
+  color: #e67e22; }
+
+h2:hover {
+  color: #e67e22; }
+
+h3:hover {
+  color: #e67e22; }
+
+h4:hover {
+  color: #e67e22; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  width: 60px; }
+
+li {
+  background-color: #4479ba;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  text-align: center;
+  font-family: "Lato", sans-serif; }
+
+li:hover {
+  background-color: #e74c3c; }
+
+.menu {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  color: black;
+  text-decoration: none; }

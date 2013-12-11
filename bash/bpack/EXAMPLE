@@ -1,0 +1,22 @@
+# Maintainer: Mr. foobar  email
+name=whatever
+ver=number
+url="http://www.foo.tld"
+arch=('x86_64' 'i686')
+license=('GPLv3')
+depends=('php' 'mysql')
+source=("http://www.server.tld/${name}-${ver}.tar.gz")
+license=('GPLv3')
+depends=('')
+source=("whatever")
+installdir=(/usr/bin/)
+
+install() {
+#install commands here
+
+}
+
+remove()
+{
+#remove commands here
+}

@@ -1,0 +1,92 @@
+#!/bin/bash
+# Copyright (C) 2011 TheShadowFog
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+mainserver="theshadowfog.com"
+server="theshadowfog.com/bpack/packages"
+DIRECTORY=~/bpkgs
+port="3030"
+config=~/.servers.cfg
+
+if [ -f ~/$config ]
+then
+echo $config
+. $config
+else
+touch $config
+echo "#syntax: servername="url" " >> $config
+. $config
+fi 
+
+#. server.cfg
+# add config code
+#---------------------------------------
+if [ -d "$DIRECTORY" ]; then
+    # Control will enter here if $DIRECTORY exists
+echo "$DIRECTORY exists"
+fi
+
+if [ ! -d "$DIRECTORY" ]; then
+mkdir $DIRECTORY
+fi
+case "$1" in
+ 
+install)
+cd $DIRECTORY
+wget --directory-prefix=$DIRECTORY $server/$2
+source $2
+install
+rm $2
+exit
+;;
+
+uinstall)
+source $2
+install
+exit
+;;
+
+   search)
+nc $mainserver $port | grep $2
+exit
+        ;;
+
+   remove)
+cd $DIRECTORY
+wget --directory-prefix=$DIRECTORY $server/$2
+source $2
+remove
+rm $2
+exit
+
+exit
+        ;;
+
+
+ *)
+   echo "You may run: "
+    echo "./bpack install"
+    echo "./bpack search name"
+    echo "./bpack help"
+   exit
+
+     exit
+    ;;
+
+
+    info)
+    echo "theshadowfog.com"
+     exit
+    ;;
+
+esac
+exit 0
+

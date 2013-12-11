@@ -1,0 +1,1 @@
+system("artii lol")

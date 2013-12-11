@@ -1,0 +1,37 @@
+Lux - The lightweight web framework
+
+
+Examples:
+
+---------------
+import lux
+lux.path("~/html")
+lux.page("index",".html", 
+"""
+This is the index page.
+""" )
+lux.run(3030)
+
+---------------
+
+
+Installation:
+
+---------------
+There is no pip package for this. 
+
+Just download the file into the directory of your project and then put this in your code:
+"import lux"
+
+
+Doc:
+
+---------------
+
+Functions:
+
+path(directory) # The path to your html files. [optional]
+
+page(name,type,text): # This will create a page.
+
+run(port) # This will run the server
